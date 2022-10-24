@@ -28,7 +28,7 @@ body {
 
 #zee-privacy>a {
   font-family: sans-serif;
-  font-size: 12px;
+  font-size: 11px;
   color: white;
   text-decoration: underline;
   cursor: pointer
@@ -72,9 +72,9 @@ body {
 #zee-cookie-notice {
   font-family: sans-serif;
   color: white;
-  font-size: 12px;
+  font-size: 11px;
   text-align: center;
-  max-width: calc(100% - 20px);
+  max-width: calc(100% - 150px);
   opacity: .72;
 }
 
@@ -82,7 +82,7 @@ body {
   display: block;
   text-transform: uppercase;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: bold;
 }
 

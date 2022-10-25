@@ -17,7 +17,7 @@ body {
   justify-content: flex-end;
   flex-direction: column;
   z-index: 100;
-  background: center / cover no-repeat url('./splash-background-image.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
+  background: center / cover no-repeat url('./assets/splash-background-image.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
 }
 
 #zee-privacy {
@@ -334,4 +334,22 @@ body {
 
 .zee-loading-helper-1 #zee-loading-helper {
   height: 60px;
+}
+
+/* For desktop version */
+@media (min-width: 768px) {
+  #zee-splash {
+    background: center / cover no-repeat url('./assets/splash-background-image-desktop.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
+    justify-content: center;
+  }
+  
+  .zee-launch-button-container,
+  #zee-loading-helper,
+  #zee-cookie-notice,
+  #zee-privacy {
+    margin-left: 50%;
+  }
+  #zee-loading {
+    margin: 5px 0 20px 50%;
+  }
 }

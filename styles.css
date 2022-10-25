@@ -26,7 +26,8 @@ button {
   justify-content: flex-end;
   flex-direction: column;
   z-index: 100;
-  background: center / cover no-repeat url('./assets/splash-background-image.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
+  /* you can modify the background here */
+  background: center / cover no-repeat url('./assets/img/splash-background-image.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
 }
 
 /* This is style rule for the button container */
@@ -367,8 +368,9 @@ button {
 
 @media (min-width: 768px) {
   #zee-splash {
-    background: center / cover no-repeat url('./assets/splash-background-image-desktop.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
     justify-content: center;
+    /* you can modify the background here */
+    background: center / cover no-repeat url('./assets/img/splash-background-image-desktop.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
   }
   
   .zee-launch-button-container,

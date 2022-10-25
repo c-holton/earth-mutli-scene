@@ -9,13 +9,13 @@
 	<meta name="theme-color" content="#ffffff">
 	
 	<!-- This is where you add your analytics tag -->	
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
 			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
 			t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
 			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "e837ddm6xj");
-	</script>
+	</script> -->
 	
 	<!-- This is where you add your title of the document -->	
 	<title>An Augmented Reality Experience</title>
@@ -26,22 +26,26 @@
 	<!-- This is where you add your external style sheet file -->	
 	<link rel="stylesheet" href="styles.css">
 	
+	<!-- Do not touch below scripts -->
 	<script crossorigin src="https://unpkg.com/react@17.0.1/umd/react.development.js"></script>
 	<script crossorigin src="https://unpkg.com/react-dom@17.0.1/umd/react-dom.development.js"></script>
 	<script src="https://libs.zappar.com/jute/16.3/index.js"></script>
 </head>
 
 <body>
-	<!-- This is where you add your contents of an HTML document -->	
+	<!--
+		This is where you can add your contents of an HTML document
+		Do not touch id for the elements
+	-->	
 	<div id="zee-splash">
 		
 		<!-- This is where you add your launch button and text -->
 		<div class="zee-launch-button-container">
 			<div id="zee-launch-button-text">
-				<img src="./assets/launch-now-text.svg" alt="Launch now" />
+				<img src="./assets/svg/launch-now-text.svg" alt="Launch now" />
 			</div>
 			<button id="zee-launch-button">
-				<img src="./assets/launch-button.svg" alt="Launch button" />
+				<img src="./assets//svg/launch-button.svg" alt="Launch button" />
 			</button>
 		</div>
 		
@@ -76,7 +80,7 @@
 			</div>
 		</div>
 		
-		<!-- This is where you add your cookie and privacy policies -->
+		<!-- This is where you can add your own cookie and privacy policies -->
 		<div id="zee-cookie-notice">
 			<span id="zee-cookie-title">Cookies</span>
 			<span id="zee-cookie-body"
@@ -100,6 +104,7 @@
 		</div>
 	</div>
 	
+	<!-- Do not touch below scripts -->
 	<script>var JUTE_VERSION = "16.3.17";</script>
 	<script>(() => { "use strict"; var e = { 808: (e, t, o) => { o.r(t) }, 384: e => { e.exports = void 0 } }, t = {}; function o(n) { var i = t[n]; if (void 0 !== i) return i.exports; var a = t[n] = { exports: {} }; return e[n](a, a.exports, o), a.exports } o.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, (() => { o(384), o(808); let e = document.getElementById("zee-launch-button") || document.createElement("button"), t = document.getElementById("zee-launch-button-only-essential") || document.createElement("button"), n = document.getElementById("zee-splash") || document.createElement("div"), i = !1, a = !1; t.addEventListener("click", (() => { a = !0, e.click() })), Jute.init({ launchButton: e, onLoading: () => { n.classList.add("zee-loading"),
 		setTimeout(() => {

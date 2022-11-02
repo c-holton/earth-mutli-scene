@@ -37,7 +37,7 @@
 		This is where you can add your contents of an HTML document
 		Do not touch id for the elements
 	-->	
-	<div id="splash">
+	<div id="splash-page">
 		
 		<!-- This is where you add your launch button and text -->
 		<div class="launch-button-container">
@@ -50,7 +50,7 @@
 		</div>
 		
 		<!-- This is a loading spinner -->
-		<div id="loading">
+		<div id="loading-spinner">
 			<div class="sk-fading-circle">
 				<div class="sk-circle1 sk-circle"></div>
 				<div class="sk-circle2 sk-circle"></div>
@@ -114,7 +114,7 @@
 	
 	<!-- Do not touch below scripts -->
 	<script>var JUTE_VERSION = "16.3.17";</script>
-	<script>(() => { "use strict"; var e = { 808: (e, t, o) => { o.r(t) }, 384: e => { e.exports = void 0 } }, t = {}; function o(n) { var i = t[n]; if (void 0 !== i) return i.exports; var a = t[n] = { exports: {} }; return e[n](a, a.exports, o), a.exports } o.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, (() => { o(384), o(808); let e = document.getElementById("launch-button") || document.createElement("button"), t = document.getElementById("launch-button-only-essential") || document.createElement("button"), n = document.getElementById("splash") || document.createElement("div"), i = !1, a = !1; t.addEventListener("click", (() => { a = !0, e.click() })), Jute.init({ launchButton: e, onLoading: () => { n.classList.add("loading"),
+	<script>(() => { "use strict"; var e = { 808: (e, t, o) => { o.r(t) }, 384: e => { e.exports = void 0 } }, t = {}; function o(n) { var i = t[n]; if (void 0 !== i) return i.exports; var a = t[n] = { exports: {} }; return e[n](a, a.exports, o), a.exports } o.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, (() => { o(384), o(808); let e = document.getElementById("launch-button") || document.createElement("button"), t = document.getElementById("launch-button-only-essential") || document.createElement("button"), n = document.getElementById("splash-page") || document.createElement("div"), i = !1, a = !1; t.addEventListener("click", (() => { a = !0, e.click() })), Jute.init({ launchButton: e, onLoading: () => { n.classList.add("loading"),
 		setTimeout(() => {
 			i || n.classList.add("loading-helper-1");
 		}, 7500),

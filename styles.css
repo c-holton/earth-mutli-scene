@@ -15,7 +15,7 @@ button {
 
 
 /* This is style rule for the container of the contents */
-#splash {
+#splash-page {
   width: 100%;
   height: 100%;
   top: 0px;
@@ -43,25 +43,25 @@ button {
   Below are style rules for the loading state
   ========================================================================== */
 
-#loading {
+#loading-spinner {
   margin: 5px auto 20px;
   height: 52px;
   min-height: 52px
 }
 
-#splash.started {
+#splash-page.started {
   animation: splash-hide 400ms ease-in-out forwards
 }
 
-#splash>#loading {
+#splash-page>#loading-spinner {
   display: none
 }
 
-#splash.loading>#launch-button {
+#splash-page.loading>#launch-button {
   display: none
 }
 
-#splash.loading>#loading {
+#splash-page.loading>#loading-spinner {
   display: block
 }
 
@@ -367,7 +367,7 @@ button {
   ========================================================================== */
 
 @media (min-width: 768px) {
-  #splash {
+  #splash-page {
     justify-content: center;
     /* you can modify the background here */
     background: center / cover no-repeat url('./assets/img/splash-background-image-desktop.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
@@ -379,7 +379,7 @@ button {
   #privacy {
     margin-left: 50%;
   }
-  #loading {
+  #loading-spinner {
     margin: 5px 0 20px 50%;
   }
 }

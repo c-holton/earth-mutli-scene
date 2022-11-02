@@ -37,20 +37,20 @@
 		This is where you can add your contents of an HTML document
 		Do not touch id for the elements
 	-->	
-	<div id="zee-splash">
+	<div id="splash">
 		
 		<!-- This is where you add your launch button and text -->
-		<div class="zee-launch-button-container">
-			<div id="zee-launch-button-text">
+		<div class="launch-button-container">
+			<div id="launch-button-text">
 				<img src="./assets/svg/launch-now-text.svg" alt="Launch now" />
 			</div>
-			<button id="zee-launch-button">
+			<button id="launch-button">
 				<img src="./assets//svg/launch-button.svg" alt="Launch button" />
 			</button>
 		</div>
 		
 		<!-- This is a loading spinner -->
-		<div id="zee-loading">
+		<div id="loading">
 			<div class="sk-fading-circle">
 				<div class="sk-circle1 sk-circle"></div>
 				<div class="sk-circle2 sk-circle"></div>
@@ -68,37 +68,37 @@
 		</div>
 		
 		<!-- This is loading helper texts -->
-		<div id="zee-loading-helper">
-			<div id="zee-loading-helper-1">
-				<div class="zee-loading-helper-title" id="zee-loading-helper-1-title">Loading...</div><span
-					id="zee-loading-helper-1-body">It may take a few moments to load the experience over your
+		<div id="loading-helper">
+			<div id="loading-helper-1">
+				<div class="loading-helper-title" id="loading-helper-1-title">Loading...</div><span
+					id="loading-helper-1-body">It may take a few moments to load the experience over your
 					connection.</span>
 			</div>
-			<div id="zee-loading-helper-2">
-				<div class="zee-loading-helper-title" id="zee-loading-helper-2-title">Still Loading...</div><span
-					id="zee-loading-helper-2-body">Please check you have a good Wi-Fi or mobile data connection.</span>
+			<div id="loading-helper-2">
+				<div class="loading-helper-title" id="loading-helper-2-title">Still Loading...</div><span
+					id="loading-helper-2-body">Please check you have a good Wi-Fi or mobile data connection.</span>
 			</div>
 		</div>
 		
 		<!-- This is where you can add your own cookie and privacy policies -->
-		<div id="zee-cookie-notice">
-			<span id="zee-cookie-title">Cookies</span>
-			<span id="zee-cookie-body"
+		<div id="cookie-notice">
+			<span id="cookie-title">Cookies</span>
+			<span id="cookie-body"
 				>Once you tap Launch, we’ll use cookies to enable operation of the
 				site, and to measure usage and engagement.</span
 			>
 		</div>
 		
-		<div id="zee-privacy">
+		<div id="privacy">
 			<a
-				id="zee-privacy-text"
+				id="privacy-text"
 				href="https://www.zappar.com/privacy"
 				target="_blank"
 				rel="noopener noreferrer"
 				>Privacy Policy</a
 			>
 			<span> | </span>
-			<a id="zee-launch-button-only-essential"
+			<a id="launch-button-only-essential"
 				>Launch w/o Analytics Cookies</a
 			>
 		</div>
@@ -106,13 +106,13 @@
 	
 	<!-- Do not touch below scripts -->
 	<script>var JUTE_VERSION = "16.3.17";</script>
-	<script>(() => { "use strict"; var e = { 808: (e, t, o) => { o.r(t) }, 384: e => { e.exports = void 0 } }, t = {}; function o(n) { var i = t[n]; if (void 0 !== i) return i.exports; var a = t[n] = { exports: {} }; return e[n](a, a.exports, o), a.exports } o.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, (() => { o(384), o(808); let e = document.getElementById("zee-launch-button") || document.createElement("button"), t = document.getElementById("zee-launch-button-only-essential") || document.createElement("button"), n = document.getElementById("zee-splash") || document.createElement("div"), i = !1, a = !1; t.addEventListener("click", (() => { a = !0, e.click() })), Jute.init({ launchButton: e, onLoading: () => { n.classList.add("zee-loading"),
+	<script>(() => { "use strict"; var e = { 808: (e, t, o) => { o.r(t) }, 384: e => { e.exports = void 0 } }, t = {}; function o(n) { var i = t[n]; if (void 0 !== i) return i.exports; var a = t[n] = { exports: {} }; return e[n](a, a.exports, o), a.exports } o.r = e => { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, (() => { o(384), o(808); let e = document.getElementById("launch-button") || document.createElement("button"), t = document.getElementById("launch-button-only-essential") || document.createElement("button"), n = document.getElementById("splash") || document.createElement("div"), i = !1, a = !1; t.addEventListener("click", (() => { a = !0, e.click() })), Jute.init({ launchButton: e, onLoading: () => { n.classList.add("loading"),
 		setTimeout(() => {
-			i || n.classList.add("zee-loading-helper-1");
+			i || n.classList.add("loading-helper-1");
 		}, 7500),
 		setTimeout(() => {
-			i || n.classList.add("zee-loading-helper-2");
-		}, 2e4); }, onLoaded: () => { n.remove(), i = !0 }, onUnsupported: () => { n.remove() }, onlyEssentialCookies: () => a }); let l = function (e) { const [t, o] = e.toLowerCase().split("-"); return [t, o || ""] }(navigator.language); const r = { zh: { "launch-button-text": "启动" }, fr: { "launch-button-text": "LANCER", "loading-helper-1-title": "Chargement", "loading-helper-1-body": "Le chargement peut prendre quelques instants avec votre connexion", "loading-helper-2-title": "Chargement toujours en cours", "loading-helper-2-body": "Veuillez vérifier que vous avez une bonne connexion Wi-Fi ou signal réseau mobile" }, it: { "launch-button-text": "AVVIA", "cookie-body": "Utilizziamo i cookies per abilitare tutte le funzionalità del sito, nonché per monitorarne l'utilizzo da parte degli utenti" }, hu: { "launch-button-text": "INDÍTÁS", "launch-button-only-essential": "Indítás SÜTIK nélkül", "pricacy-text": "Adatvédelmi tájékoztató", "cookie-body": "Az Indítás után sütiket fogunk használni a webhely zökkenőmentes működéséhez és mérések elvégzéséhez." }, ru: { "launch-button-text": "Начать" }, pt: { "launch-button-text": "Iniciar", "loading-helper-1-title": "CARREGANDO...", "loading-helper-1-body": "Pode levar alguns minutos para carregar a experiência em sua conexão.", "loading-helper-2-title": "AINDA CARREGANDO...", "loading-helper-2-body": "Verifique se você tem uma boa conexão Wi-Fi ou de dados móveis.", "cookie-body": "Assim que você tocar em Iniciar, usaremos cookies para permitir a operação do site e para medir o uso.", "privacy-text": "política de Privacidade", "launch-button-only-essential": "Lançar sem cookies de análise" }, es: { "launch-button-text": "Iniciar", "loading-helper-1-title": "CARGANDO...", "loading-helper-1-body": "Es posible que lleve unos minutos cargar la experiencia a través de su conexión.", "loading-helper-2-title": "SIGUE CARGANDO...", "loading-helper-2-body": "Comprueba que tienes una buena conexión Wi-Fi o de datos móviles.", "cookie-body": "Una vez que toque Iniciar, usaremos cookies para permitir el funcionamiento del sitio y para medir el uso y la participación.", "privacy-text": "Política de privacidad", "launch-button-only-essential": "Lanzamiento sin cookies de análisis" } }; if (Object.keys(r).indexOf(l[0]) > 0) for (let e in r[l[0]]) try { document.getElementById(`zee-${e}`).innerText = r[l[0]][e] } catch (t) { console.log(`Couldn't find element to translate.\nLanguage: ${l[0]}, element: zee-${e}.`) } })() })();</script>
+			i || n.classList.add("loading-helper-2");
+		}, 2e4); }, onLoaded: () => { n.remove(), i = !0 }, onUnsupported: () => { n.remove() }, onlyEssentialCookies: () => a }); let l = function (e) { const [t, o] = e.toLowerCase().split("-"); return [t, o || ""] }(navigator.language); const r = { zh: { "launch-button-text": "启动" }, fr: { "launch-button-text": "LANCER", "loading-helper-1-title": "Chargement", "loading-helper-1-body": "Le chargement peut prendre quelques instants avec votre connexion", "loading-helper-2-title": "Chargement toujours en cours", "loading-helper-2-body": "Veuillez vérifier que vous avez une bonne connexion Wi-Fi ou signal réseau mobile" }, it: { "launch-button-text": "AVVIA", "cookie-body": "Utilizziamo i cookies per abilitare tutte le funzionalità del sito, nonché per monitorarne l'utilizzo da parte degli utenti" }, hu: { "launch-button-text": "INDÍTÁS", "launch-button-only-essential": "Indítás SÜTIK nélkül", "pricacy-text": "Adatvédelmi tájékoztató", "cookie-body": "Az Indítás után sütiket fogunk használni a webhely zökkenőmentes működéséhez és mérések elvégzéséhez." }, ru: { "launch-button-text": "Начать" }, pt: { "launch-button-text": "Iniciar", "loading-helper-1-title": "CARREGANDO...", "loading-helper-1-body": "Pode levar alguns minutos para carregar a experiência em sua conexão.", "loading-helper-2-title": "AINDA CARREGANDO...", "loading-helper-2-body": "Verifique se você tem uma boa conexão Wi-Fi ou de dados móveis.", "cookie-body": "Assim que você tocar em Iniciar, usaremos cookies para permitir a operação do site e para medir o uso.", "privacy-text": "política de Privacidade", "launch-button-only-essential": "Lançar sem cookies de análise" }, es: { "launch-button-text": "Iniciar", "loading-helper-1-title": "CARGANDO...", "loading-helper-1-body": "Es posible que lleve unos minutos cargar la experiencia a través de su conexión.", "loading-helper-2-title": "SIGUE CARGANDO...", "loading-helper-2-body": "Comprueba que tienes una buena conexión Wi-Fi o de datos móviles.", "cookie-body": "Una vez que toque Iniciar, usaremos cookies para permitir el funcionamiento del sitio y para medir el uso y la participación.", "privacy-text": "Política de privacidad", "launch-button-only-essential": "Lanzamiento sin cookies de análisis" } }; if (Object.keys(r).indexOf(l[0]) > 0) for (let e in r[l[0]]) try { document.getElementById(`${e}`).innerText = r[l[0]][e] } catch (t) { console.log(`Couldn't find element to translate.\nLanguage: ${l[0]}, element: ${e}.`) } })() })();</script>
 </body>
 
 </html>

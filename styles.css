@@ -15,7 +15,7 @@ button {
 
 
 /* This is style rule for the container of the contents */
-#zee-splash {
+#splash {
   width: 100%;
   height: 100%;
   top: 0px;
@@ -31,7 +31,7 @@ button {
 }
 
 /* This is style rule for the button container */
-.zee-launch-button-container {
+.launch-button-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,29 +43,29 @@ button {
   Below are style rules for the loading state
   ========================================================================== */
 
-#zee-loading {
+#loading {
   margin: 5px auto 20px;
   height: 52px;
   min-height: 52px
 }
 
-#zee-splash.zee-started {
-  animation: zee-splash-hide 400ms ease-in-out forwards
+#splash.started {
+  animation: splash-hide 400ms ease-in-out forwards
 }
 
-#zee-splash>#zee-loading {
+#splash>#loading {
   display: none
 }
 
-#zee-splash.zee-loading>#zee-launch-button {
+#splash.loading>#launch-button {
   display: none
 }
 
-#zee-splash.zee-loading>#zee-loading {
+#splash.loading>#loading {
   display: block
 }
 
-@keyframes zee-splash-hide {
+@keyframes splash-hide {
   from {
     transform: translateX(0%)
   }
@@ -259,7 +259,7 @@ button {
   Below are style rules for the loading helper texts
   ========================================================================== */
 
-.zee-loading-helper-title {
+.loading-helper-title {
   display: block;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -267,7 +267,7 @@ button {
   font-weight: bold
 }
 
-#zee-loading-helper {
+#loading-helper {
   font-family: sans-serif;
   color: #fff;
   font-size: 12px;
@@ -277,7 +277,7 @@ button {
   position: relative
 }
 
-@keyframes zee-fade-in {
+@keyframes fade-in {
   from {
     opacity: 0
   }
@@ -287,7 +287,7 @@ button {
   }
 }
 
-@keyframes zee-fade-out {
+@keyframes fade-out {
   from {
     opacity: 1
   }
@@ -297,31 +297,31 @@ button {
   }
 }
 
-#zee-loading-helper-1 {
+#loading-helper-1 {
   top: 0;
   opacity: 0
 }
 
-#zee-loading-helper-2 {
+#loading-helper-2 {
   position: absolute;
   top: 0;
   opacity: 0
 }
 
-.zee-loading-helper-1 #zee-loading-helper-1 {
-  animation: zee-fade-in 750ms forwards
+.loading-helper-1 #loading-helper-1 {
+  animation: fade-in 750ms forwards
 }
 
-.zee-loading-helper-2 #zee-loading-helper-1 {
-  animation: zee-fade-out 750ms forwards
+.loading-helper-2 #loading-helper-1 {
+  animation: fade-out 750ms forwards
 }
 
-.zee-loading-helper-2 #zee-loading-helper-2 {
-  animation: zee-fade-in 750ms forwards;
+.loading-helper-2 #loading-helper-2 {
+  animation: fade-in 750ms forwards;
   animation-delay: 1000ms
 }
 
-.zee-loading-helper-1 #zee-loading-helper {
+.loading-helper-1 #loading-helper {
   height: 60px;
 }
 
@@ -330,7 +330,7 @@ button {
   Below are style rules for the cookie and privacy policies
   ========================================================================== */
   
-#zee-cookie-notice {
+#cookie-notice {
   font-family: sans-serif;
   color: white;
   font-size: 11px;
@@ -339,7 +339,7 @@ button {
   opacity: .72;
 }
 
-#zee-cookie-title {
+#cookie-title {
   display: block;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -347,13 +347,13 @@ button {
   font-weight: bold;
 }
 
-#zee-privacy {
+#privacy {
   padding-bottom: 15px;
   color: white;
   opacity: .72;
 }
 
-#zee-privacy>a {
+#privacy>a {
   font-family: sans-serif;
   font-size: 11px;
   color: white;
@@ -367,19 +367,19 @@ button {
   ========================================================================== */
 
 @media (min-width: 768px) {
-  #zee-splash {
+  #splash {
     justify-content: center;
     /* you can modify the background here */
     background: center / cover no-repeat url('./assets/img/splash-background-image-desktop.png'), linear-gradient(346.55deg, #e43201 -5.37%, #ff4e00 103.46%);
   }
   
-  .zee-launch-button-container,
-  #zee-loading-helper,
-  #zee-cookie-notice,
-  #zee-privacy {
+  .launch-button-container,
+  #loading-helper,
+  #cookie-notice,
+  #privacy {
     margin-left: 50%;
   }
-  #zee-loading {
+  #loading {
     margin: 5px 0 20px 50%;
   }
 }
